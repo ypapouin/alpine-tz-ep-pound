@@ -6,4 +6,4 @@ This project builds and ships Pound as a Docker image. Pound is a reverse-proxy 
 
 This docker image is based on <a href="https://hub.docker.com/_/alpine/">Alpine Linux Docker Image</a> which provides a tiny base image. The full container is less than 5 megabytes.
 
-There is a sample pound configuration file that you might use as starting point.
+You might use <a href="https://raw.githubusercontent.com/martinus-suherman/docker-pound/master/sample-pound.cfg">the sample pound configuration file</a> as a starting point.
