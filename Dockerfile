@@ -19,8 +19,9 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
     EHOME=/etc/pound
 
 RUN apk add --no-cache pound \
- && mkdir /etc/pound/certs \
- && mkdir /var/run/pound 
+    && mkdir /etc/pound \
+    && mkdir /etc/pound/certs \
+    && mkdir /var/run/pound 
 
 ENTRYPOINT ["/entrypoint_su-exec.sh", "pound"]
 
