@@ -1,4 +1,4 @@
-# docker-pound
+# martinus-suherman/alpine-tz-ep-pound
 
 Docker image for Pound, the SSL proxy and load-balancer, using [Alpine Linux](https://alpinelinux.org/) as base image.
 
