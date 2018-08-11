@@ -4,7 +4,7 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
     LABEL_VENDOR="martinussuherman" \
     LABEL_IMAGE_NAME="martinussuherman/alpine-tz-ep-pound" \
     LABEL_URL="https://hub.docker.com/r/martinussuherman/alpine-tz-ep-pound/" \
-    LABEL_VCS_URL="https://github.com/martinus-suherman/alpine-tz-ep-pound" \
+    LABEL_VCS_URL="https://github.com/martinussuherman/alpine-tz-ep-pound" \
     LABEL_DESCRIPTION="Docker image for Pound, based on Alpine Linux." \
     LABEL_LICENSE="GPL-3.0" \
     # container/su-exec UID \
