@@ -23,7 +23,7 @@ RUN apk add --no-cache pound \
     && mkdir /etc/pound/certs \
     && mkdir /var/run/pound 
 
-ENTRYPOINT ["/entrypoint_su-exec.sh", "pound"]
+ENTRYPOINT ["/entrypoint_exec.sh", "pound"]
 
 ARG LABEL_VERSION="latest"
 ARG LABEL_BUILD_DATE
