@@ -1,10 +1,6 @@
 FROM martinussuherman/alpine-tz-ep
 
-ENV LABEL_MAINTAINER="Martinus Suherman" \
-    LABEL_VENDOR="martinussuherman" \
-    LABEL_IMAGE_NAME="martinussuherman/alpine-tz-ep-pound" \
-    LABEL_URL="https://hub.docker.com/r/martinussuherman/alpine-tz-ep-pound/" \
-    LABEL_VCS_URL="https://github.com/martinussuherman/alpine-tz-ep-pound" \
+ENV LABEL_MAINTAINER="y.papouin@dec-industrie.com" \
     LABEL_DESCRIPTION="Docker image for Pound, based on Alpine Linux." \
     LABEL_LICENSE="GPL-3.0" \
     # container/su-exec UID \
@@ -23,7 +19,7 @@ RUN apk add --no-cache pound \
     && mkdir /etc/pound/certs \
     && mkdir /var/run/pound 
 
-ENTRYPOINT ["/entrypoint_exec.sh", "pound"]
+ENTRYPOINT ["/entrypoint_exec.sh", "pound", "-v"]
 
 ARG LABEL_VERSION="latest"
 ARG LABEL_BUILD_DATE
